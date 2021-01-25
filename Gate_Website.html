@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #formality {font-size: 30px; background-color: rgb(255, 255, 255); border-radius: 30px;
+            border:3px solid black; display: inline-block; height: fit-content;
+            width: 78%; color: green; position: relative; right: -5px;
+        }
+
+        input[type="text"] {height: 35px; width: 100%; font-size: 30px;}
+
+        header {text-align: center; animation: c 3s infinite; -ms-animation: c 5s infinite;
+            -webkit-animation: c 3s infinite; text-shadow: 0 0 4px black; font-size: 40px;}
+
+        @-webkit-keyframes c {
+            10% {
+                color: tomato;
+            }
+            20% {color: blue;}
+            30% {
+                color: pink;
+            }
+            40% {
+                color: green;
+            }
+
+            50% {
+                color: darkmagenta;
+            }
+            60% {
+                color: red;
+            }
+
+            70% {
+                color: darkred;
+            }
+
+            80% {
+                color: navy;
+            }
+
+            90% {
+                color: darkturquoise;
+            }
+
+            100% {
+                color: greenyellow;
+            }
+        }
+
+        header {
+            text-align: center;
+        }
+
+        select[id="category"] {width:99.8%;height: 35px;font-size: 30px;margin: 1px;}
+        * {
+            box-sizing: border-box;
+        }
+
+        select[id="Stype"] {width:99.8%;height: 35px;font-size: 30px;margin: 1px;}
+        #hemo {color: red;}
+        .btn {text-align: center; font-size: 30px;}
+        .buyo {background-color: darkgreen;width: 100%; border-radius: 20px; color: aliceblue;}
+        .buyo:hover {background-color: rgb(100, 173, 26);color: black;cursor:pointer;
+        }
+
+        input[type="email"] {width:99.8%;height: 35px;font-size: 30px;margin: 1px;}
+        #name{width:99.8%;height: 35px;font-size: 30px;margin: 1px;}
+        #pic{width:99.8%;height: 35px;font-size: 20px;margin: 1px;}
+        #sign{width:99.8%;height: 35px;font-size: 20px;margin: 1px;}
+        a {font-size: 25px; width: 100%; margin: 5px; color: rgb(54, 53, 53);
+        }
+
+        a:hover {
+            background-color: rgb(165, 165, 165);
+        }
+
+        a:active {
+            background-color: chartreuse;
+        }
+
+        .word {background-color: silver;text-align: right;position: relative;top: -20px;padding: 5px;
+        }
+
+        .intro {background-color: darkgoldenrod;text-align: center;padding: 15px;
+            color: white; font-size: 45px;
+        }
+
+        aside {float: left; width: 22%; height: 600px; border: 3px dashed rgb(0, 0, 0);
+        position: relative;bottom: -200px;}
+        #sala{width:99.8%;height: 35px;font-size: 30px;margin: 1px;}
+        .side {width: 100%; height:max-content; float: left;position: relative;top: -53px;}
+
+        h2 {text-align: center;position: relative;top: -10px;font-size: 25px;}
+
+        footer {background-color: orange; text-align: center;}
+
+        h3 {background-color: purple;text-align: center;font-size: 30px;color: white;}
+        #parah {color: rgb(0, 0, 0);font-size: 25px;padding: 5px; }
+        #nu{background-color: silver;color: black;  }
+        #about_page{display: none;border: 3px dashed black;}
+        .anna{text-align: center; font-size: 60px;text-shadow: 4px 4px 5px red,4px 4px 5px black;
+        font-weight: bold; }
+        @media screen and (max-width: 720px) {
+            .anna{width: 100%; float: left;font-size: 28px;text-shadow: 2px 2px 3px red,2px 2px 3px black;}
+            .mainbtn{display:inline;}
+            header{font-size: 33px;}
+            h2{font-size: 15px;height: 100px;}   
+            aside{height:360px;position: relative;bottom: -150px;}
+            .side{width: 100%; height: 300px;position: relative;top: -100px;}
+            .intro{font-size: 28px;}
+            input[type="email"]{margin: 1.5px;width: 99%;}
+            select[id="Stype"]{margin: 1.5px;width: 99%;}
+            select[id="category"]{margin: 1.5px;width: 99%;}
+            #sala{margin: 1.5px;width: 99%;}
+            #name{margin: 1.5px;width: 99%;}
+            #pic{margin: 1.5px;width: 99%;}
+            #sign{margin: 1.5px;width: 99%;}
+        }
+        ul{font-size: 25px;}
+        .mainbtn{background-color: silver; font-size: 20px; text-align: center;border: none;
+        cursor: pointer;}
+        .mainbtn:hover{text-decoration: underline; }
+        .mainbtn:focus{background-color: black;color: white;}
+        #elg1{display: none; border: 3px dashed black;  }
+        #elg_descriptiion{font-size: 25px;margin-left: 10px;}
+        #imge{margin-left: auto; margin-right: auto; display: block; width: 300px; height: 350px;}
+        strong{font-size: 35px;}
+        input[type="search"]{width: 85%; height: 35px; font-size: 30px;}
+        #admission{display: none;}
+        button[id="search"]{width: 10%; height: 35px; background-color: skyblue; position: relative; bottom: -5px;}
+         button[id="search"]:hover{background-color: blue;color: aliceblue;cursor: pointer;}
+         #no_name{font-size: 40px; color:blue;text-align: center;}
+         #prediction{font-size: 40px;text-align: center; color: blueviolet;}
+         #admission{border: 2px solid black;}
+         #adm_value{position: relative; bottom: -10px; margin-left: 5px;}
+    </style>
+
+</head>
+
+<body>
+    <h1 class="intro">GRADUATE APTITTUDE TEST IN ENGINEERING(GATE)</br>GATE ONLINE APPLICATION PROCESSING SYSTEM</h1>
+    <div class="word">
+        <button class="mainbtn" onclick="Homepage()">Homepage</button>
+        <button class="mainbtn" onclick="admission()">Admissions</button>
+        <button class="mainbtn" onclick="ELIGIBILITY()">Eligibility</button>
+        <button class="mainbtn" onclick="about()">ABOUT</button>
+    </div>
+    <aside id="aside">
+        <h2>ADDS BY GOOGLE</h2>
+        <a href="https://home.iitd.ac.in/" target="_blank">
+            <img class="side" src="https://static.toiimg.com/photo/58944050.cms">
+        </a>
+    </aside>
+    <form id="formality" action="https://gursimran-singh-turna.github.io/GATE_Website_Subpart/">
+        <header>REGISTRATION FORM</header>
+        </br>
+        <label for="name">NAME</label></br>
+        <input type="text" placeholder="Enter your name" id="name" required></br></br>
+        <label for="pic">upload your image</label></br>
+        <input type="file" id="pic" required></br></br>
+        <label for="sign">Upload your signature</label></br>
+        <input type="file" id="sign" required></br></br>
+        <label for="date">DATE</label>
+        <input type="date" id="date" required></br></br>
+        <label for="salary">Salary</label></br>
+        <input type="text" placeholder="Enter your salary" id="sala" autocomplete="on" required>
+        <p id="hemo"></p>
+        <label for="id">Email</label>
+        <input type="email" placeholder="Enter your email" required></br></br>
+        <label for="student">Student type</label></br>
+        <select id="Stype">
+            <option value="no_choice">Select Student Type</option>
+            <option value="Dropper">Dropper</option>
+            <option value="12th pass">Passing 12 this year</option>
+        </select></br></br>
+        <label for="CATEGORY">CATEGORY</label></br>
+        <select id="category">
+            <option value="no-choice">Select Your Category</option>
+            <option value="General">General</option>
+            <option value="BC">BC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+        </select></br></br>
+        <p id="ftg"></p>
+        <button class="btn buyo" onclick="salary()">SUBMIT</button></br></br>
+    </form>
+    <script>
+        var x;
+        function salary() {
+            x = document.getElementById("sala").value;
+            try {
+                if (x == "") throw "Enter salary";
+                if (isNaN(x)) throw "Salalry can't be text";
+            }
+            catch (err) { document.getElementById("hemo").innerHTML = "Error:" + err; }
+        }
+        function about(){
+            document.getElementById("elg1").style.display = "none";
+                document.getElementById("about_page").style.display="block"; 
+                document.getElementById("formality").style.display="none";   
+                document.getElementById("aside").style.display="none";
+                document.getElementById("intro").style.display="block";
+                document.getElementById("foot").style.display="none";
+                document.getElementById("admission").style.display = "none";
+            }
+        
+        function Homepage(){
+            document.getElementById("admission").style.display = "none";
+            document.getElementById("elg1").style.display="none";
+            document.getElementById("about_page").style.display="none";
+             document.getElementById("aside").style.display="inline-block";
+            document.getElementById("formality").style.display="inline-block";
+            document.getElementById("intro").style.display="block";
+            document.getElementById("foot").style.display="block";
+        }
+        function ELIGIBILITY(){
+             document.getElementById("admission").style.display = "none"; 
+            document.getElementById("elg1").style.display="block";
+            document.getElementById("foot").style.display="block";
+            document.getElementById("aside").style.display="none";
+            document.getElementById("formality").style.display="none";
+            document.getElementById("about_page").style.display = "none";
+            document.getElementById("intro").style.display="block";
+        }
+        function admission(){
+             document.getElementById("elg1").style.display = "none";
+             document.getElementById("admission").style.display = "block";
+            document.getElementById("foot").style.display = "block";
+            document.getElementById("aside").style.display = "none";
+            document.getElementById("formality").style.display = "none";
+            document.getElementById("about_page").style.display = "none";
+            document.getElementById("intro").style.display = "block"; 
+            }
+            var text;
+        function searching(){
+            text = document.getElementById("adm_value").value;
+            try{
+                if(x=="") throw "Fill the form";
+            }
+            catch(err){document.getElementById("rest").innerHTML=err;}
+            document.getElementById("no_name").innerHTML="The colleges will be displayed after GATE result.</br>So please wait till result!!!";
+            document.getElementById("prediction").style.display="none";
+        }  
+    </script>
+    
+    <div id="about_page">
+        <h1 class="anna">ACKNOWLEDGEMENT</h1>
+        <p id="parah">
+            GATE 2020 exam will be conducted by IIT Delhi (Indian Institute of Technology, Delhi). The GATE 2020 exam
+            will be conducted on the following dates - 01st, 02nd, 08th and 09th February, 2020. The GATE 2020 exam will
+            be a computer based exam of 3 hours duration and will consist of 65 questions totalling up to 100
+            marks.</br></br>
+
+            IIT Delhi has announced that GATE 2020 exam will be organized for 25 Papers, and the candidates have to
+            select any one paper to attempt. Biomedical Engineering has been added as the 25th paper of GATE 2020 in
+            this session. IIT Delhi will be organizing GATE exam for the 6th time, with the most recent ones in 2004 and
+            2012. IIT Delhi will be organizing GATE exam for the 6th time, with the most recent ones in 2004 and
+            2012.</br></br>
+
+            To check the last GATE Paper conducted by IIT Delhi in 2012, click here.</br></br>
+
+            GATE 2020 Application Form will be available on the official website of IIT Delhi tentatively in the last
+            week of August 2019. Candidates who meet the eligibility criteria of GATE 2020 will have to register through
+            GOAPS tentatively by the fourth week of September 2019.</br></br>
+
+            Note: Only those candidates who register for GATE 2020 exam online will be able to attempt the GATE
+            examination.</br></br>
+
+            Graduate Aptitude Test in Engineering (GATE) is an all India examination administered and conducted jointly
+            by the IISc (Indian Institute of Science) and the seven IITs(Indian Institutes of Technology) on behalf of
+            the National Coordination Board – GATE, Department of Higher Education, Ministry of Human Resource
+            Development (MHRD), Government of India. GATE 2020 score can be used by students for admissions to various
+            post-graduate programmes (e.g. M.E., M.Tech, direct Ph.D.) in Indian higher education institutes with
+            financial assistance provided by MHRD and other Government agencies.The score may also be used by Public
+            sector units for employment screening purposes.</br></br>
+            This exam provides them
+            following perks......</br>
+            <ul>
+                <li>chance to persue higher education in NIT</li>
+                <li>chance to persue higher education in IIT</li>
+                <li>recruitment in PSU.</li>
+                <li>Admissions in foreign universities.</li>
+            </ul>
+            </p>    
+    </div>
+    <div id="elg1">
+        <h1 class="anna">ELIGIBILITY</h1>
+        <img id="imge" src="https://rmd.ac.in/images/aboutus/eligibility.jpg">
+        <p id="elg_descriptiion"><strong>GATE Eligibility Criteria 2021 -</strong> IIT Bombay has announced the relaxation in GATE 2021 eligibility criteria due to
+        covid-19 situation. As per the announcement, candidates in their pre-final year of undergraduate degree will also be
+        eligible for GATE 2021. The detailed GATE 2021 eligibility criteria will be released in information brochure along with
+        the application form. The GATE eligibility criteria consist of parameters like age limit, academic qualification,
+        nationality and more which candidates will have to meet in order to appear for the entrance examination. Also, two new
+        papers - Environmental Science and Engineering (ES) and Humanities and Social Science (XH) and students from arts and
+        humanities background will also be eligible to appear in GATE 2021 for XH paper.</br>
+        Latest: GATE 2021 registration will be open from September 14 to 30, 2020. GATE 2021 exam dates announced, exam to be
+        held on February 5 to 7 and 12 to 14.</br>
+        Candidates have to fulfil the GATE eligibility criteria 2021 failing which, they will not be allowed to appear for the
+        national level engineering postgraduate entrance test. Therefore, candidates are suggested to refer to the eligibility
+        criteria before proceeding towards filling the GATE 2021 application form. There is no age limit to apply for GATE.
+        Candidates can appear for the entrance exam any number of times.</br>
+        Eligibility criteria of GATE 2021 states that candidates who possess certification from any of the professional
+        societies must ensure that those examinations conducted by the societies are approved by MHRD/AICTE/UGC/UPSC as
+        equivalent to B.E./B.Tech./B.Arch./B.Planning etc. Also, candidates who registered for certification equivalent to
+        B.E./B.Tech from any of the professional societies will also be eligible for GATE 2021. Candidates must note that these
+        eligibility criteria are just for GATE examination, criteria for admissions into M.Tech courses at different IITs will
+        be decided separately. Read on to know in detail about GATE 2021 eligibility criteria.</p>
+    </div>
+    <form id="admission">
+        <h1 class="anna">SEARCH YOUR COLLEGES</h1>
+        <input type="search" id="adm_value" placeholder="Search for colleges" required>
+        <button class="fa fa-search " id="search" onclick="searching()" ></button></br>
+        <h4 id="prediction">To get list of all colleges for your bright future. Click on search button....</h4>
+        <h1 id="rest"></h1>
+        <h1 id="no_name"></h1>
+    </form>
+        <h1 id="hello"></h1>
+</body>
+<footer id="foot">
+    <h3>For more information, contect us at....</h3>
+    <a href="tel:9781798400"> <i class="fa fa-whatsapp" style="font-size: 40px; color: green;"></i></a>
+    <a href="mailto:gursimransingh2401@gmail.com"><i class="fa fa-mail-reply"
+            style="font-size: 40px; color: blue;"></i></a>
+    <p>Gursimran singh</br>@Copyright 2020.All Right Reserved</br>All the content present in this page
+        is taken from my brain</p>
+</footer>
+
+</html>
