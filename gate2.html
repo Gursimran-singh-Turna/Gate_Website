@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Document</title>
+    <style>#welcome{width: 100%;}
+    #slider{overflow: hidden;width: 80%;height: 600px;margin-left: auto;margin-right: auto;display: block;border: 3px solid black;}
+    #slider figure{position: relative;left: 0;margin: 0;width: 500%;animation: 10s slider infinite;}
+    #slider figure img{width: 20%;height: 600px; float: left;margin-left: auto;margin-right: auto; display: block;}
+    @-webkit-keyframes slider{
+      0%{left: 0;}
+      20%{left: 0;}
+      40%{left: -100%;}
+      60%{left: -100%;}
+      80%{left: -200%;}
+      100%{left: -200%;}
+    }
+    .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+    @media screen and (max-width: 720px) {
+      .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+      .card{width:100%;}
+      #ABOUT{width: 100%;}
+      .display-2{font-size: 45px;}
+      .navbar-brand{text-align: center;justify-content: center; font-size: 30px;}
+      .img1{width: 100%;height: 100%;display: block;margin: 0;}
+      .carousel{width: 100%; height: 100%;margin: 0;}
+      .carousel-inner{width: 100%;margin: 0;}
+      .carousel-item{width: 100%;margin: 0;}
+    }
+    .carousel-control-prev:hover{background-color: rgba(0, 0, 0, 0.308);}
+    .carousel-control-next:hover{background-color: rgba(0, 0, 0, 0.308);}
+    .card:hover{transform: scale(1.1);transition: transform 0.2s;}
+    *{box-sizing: border-box;}
+    input[type="text"]{width: 100%;font-size: 30px;}
+    label{font-size: 35px;font-weight: bold;}
+    </style>
+</head>
+<body>
+  
+  <nav class="nav nav-pills navbar navbar-expand-lg bg-dark navbar-dark" style="font-size: 15px;">
+    <a href="#" style="font-size: 15px;" class="navbar-brand"><img style="width: 40px;height: 40px;border-radius: 50%;" src="https://drive.google.com/uc?id=1N91X9V2UgOu8O2aB_KhjQKms5KcNuKbo">GURSIMRAN SINGH</a>
+    
+    <button type="button" class="navbar navbar-toggler" data-toggle="collapse" data-target="#carpet">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="carpet">
+      <ul style="font-size: 20px;text-align: center;" class="nav nav-pills navbar-nav">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active" data-toggle="pill">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#profile" class="nav-link" data-toggle="pill">PROFILE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#PROJECTS" class="nav-link" data-toggle="pill">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#ABOUT" class="nav-link" data-toggle="pill">ABOUT</a>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+    <div class="tab-content" style="padding: 10px;" >
+      <div id="home" class="container-fluid tab-pane active">
+        <header class="display-1" style="text-align: center;font-size: 40px;color: blue;font-weight: bold; text-decoration: underline;">OVERVIEW</header>
+        <div style="margin-left: auto; margin-right: auto;display: block;width: 1000px;height: 600px;" class="carousel slide" data-ride="carousel" id="demo">
+          <div class="carousel-indicators">
+            <li style="background-color: black;" data-target="#demo" class="active" data-slide-to="0"></li>
+            <li style="background-color: black;" data-target="#demo" data-slide-to="1"></li>
+            <li style="background-color: black;" data-target="#demo" data-slide-to="2"></li>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <img class="img1" style="width: 1000px;height: 600px;" src="https://c0.wallpaperflare.com/preview/466/812/837/analysis-business-cafe-communication.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="img1" style="width: 1000px;height: 600px;" src="https://previews.123rf.com/images/gmast3r/gmast3r1503/gmast3r150300010/37887487-businessman-profile-icon-male-portrait-flat.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="img1" style="width: 1000px;height: 600px;" src="https://previews.123rf.com/images/o0matze0o/o0matze0o1805/o0matze0o180500021/101535118-website-and-internet-contact-us-page-concept-with-icons-on-four-black-hanged-tags-on-white-backgroun.jpg" alt="">
+            </div>
+          </div>
+          <a href="#demo" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" ></span>
+          </a>
+          <a href="#demo" class="carousel-control-prev" data-slide="prev" >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+        </div>
+        </div>
+      <div id="profile" class="container tab-pane fade" style="border: 3px dashed blue;padding: 5px;">
+        <h1  style="text-align: center;text-decoration: underline;">MY PROFILE</h1>
+        
+        <div class="container">
+          <img src="https://drive.google.com/uc?id=1N91X9V2UgOu8O2aB_KhjQKms5KcNuKbo" style="border-radius: 50%; height: 250px;width: 250px;margin-left: auto;margin-right: auto;display: block;" alt="">
+          <p style="font-size: 25px;">Hello! my name is Gursimran singh, i am currently a student at Guru nanak Dev univeristy jalandhar,
+            i have scored 9.4cgpa in class 10 exams and 85.2% in class 12 exam. I prefer to work hard because according to me by working hard nothing is impossible in this world.
+          </p>
+        </div>
+        
+        <table style="text-align: center;" class="table table-bordered table-striped table-dark table-hover">
+          <thead>
+            <tr>
+              <th>S.NO</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>1</th>
+            <th><img style="width: 80px; height: 80px;" src="data:image/jpeg;base64,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" alt=""></br> Python</th>
+          </tr>
+          <tr>
+            <th>2</th>
+            <th><img style="height: 80px;width: 80px;" src="https://www.bing.com/th?id=OIP.C4SccvODYv4SBypJFmYAEwHaHa&w=204&h=204&c=8&rs=1&qlt=90&pid=3.1&rm=2" alt=""></br>C/C++</th>
+          </tr>
+          <tr>
+            <th>3</th>
+            <th><img style="width: 80px;height: 80px;" src="https://www.bing.com/th?id=OIP.bI8KDjd8-nDvzTX_Uok7FwHaHa&w=204&h=204&c=8&rs=1&qlt=90&pid=3.1&rm=2" alt=""></br>HTML</th>
+          </tr>
+          <tr>
+            <th>4</th>
+            <th><img style="width: 80px;height: 80px;" src="https://th.bing.com/th/id/OIP.oy-DqixnUFjkoFoP1NoF6wHaHa?w=203&h=203&c=7&o=5&pid=1.7" alt=""></br>CSS</th>
+          </tr>
+           <tr>
+             <th>5</th>
+             <th><img style="width: 80px;height: 80px;" src="https://www.bing.com/th?id=OIP.tZHcs0d7MAG-BBcjBekZYAAAAA&w=161&h=182&c=8&rs=1&qlt=90&pid=3.1&rm=2" alt=""></br>JAVA SCRIPT</th>
+           </tr> 
+          <tr>
+            <th>6</th>
+            <th><img style="width: 80px;height: 80px;" src="https://th.bing.com/th/id/OIP.c4RBIyTHaeRH08T4bp_waAHaGO?w=203&h=180&c=7&o=5&pid=1.7" alt=""></br>BOOTSTRAP</th>
+          </tr>
+        </table>
+      </div>
+      <div id="PROJECTS" class="container-fluid tab-pane fade">
+        <header style="text-align: center;font-size: 50px;text-decoration: underline;">MY PROJECTS</header>
+        <div class="card-columns">
+          <div class="card" style="width: 100%;border: 2px solid black;">
+            <img src="https://drive.google.com/uc?id=1BCQtd0aWk6N_W3yqLnoUd6Wq5pitIo7K" style="width: 100%;"  alt="">
+          <div class="card-body">
+            <h1 class="text-header text-center" style="color: red;">GATE PROJECT</h1>
+            <a href="https://gursimran-singh-turna.github.io/GATE_Website_MainPart/" target="_blank" class="stretched-link"></a>
+            <p class="blockquote-footer">Created on 28 october 2020</p>
+          </div>
+          </div>
+          <div class="card" style="width: 100%;border: 2px solid black;" >
+            <img src="https://drive.google.com/uc?id=1S0UhcoIwveoEP3SZuefOuijFHoExCifD" style="width: 100%;"  alt="">
+            <div class="card-body">
+              <h1 class="text-header text-center" style="color: red;">MAGIC MUSIC PLAYER</h1>
+              <a href="https://gursimran-singh-turna.github.io/Magic_Music_player/" class="stretched-link" target="_blank"></a>
+              <p class="blockquote-footer">Created on 11 november 2020</p>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <div id="ABOUT" class="container tab-pane fade" style="width: 100%; background-color: rgb(201, 204, 17);text-align: center;margin-left: auto;margin-right: auto;display: block;">
+          <header class="display-2" style="text-align: center;color: purple;">CONTACT US</header>
+          <a href="tel:9781798400" target="_blank"><img style="width: 40px; height: 40px;margin: 10px;" src="https://th.bing.com/th/id/OIP.G2SHP6zghN1TppDWf_NmNwHaHa?w=215&h=215&c=7&o=5&pid=1.7"></a>
+          <a href="mailto:gursimransingh2401@gmail.com" target="_blank"><img style="width: 40px;height: 40px;margin: 10px;" src="https://www.bing.com/th?id=OIP.oRj-X5A5T_pSSKr7OAJrUQHaFW&w=228&h=180&c=8&rs=1&qlt=90&pid=3.1&rm=2" ></a>
+          <a href="http://instagram.com/gursimransinghturna" target="_blank"><img style="width: 40px; height: 40px;margin: 10px; font-size: 40px;" src="https://www.bing.com/th?id=OIP.a79lFASb51Dm0KOM6UR7CwHaHa&w=197&h=184&c=8&rs=1&qlt=90&pid=3.1&rm=2"></a>
+          <a href="https://github.com/Gursimran-singh-Turna" target="_blank"><img style="width: 40px;height: 40px;margin: 10px;" src="https://th.bing.com/th/id/OIP.sV7tva-728oySeOUL0-vOwHaHa?w=152&h=180&c=7&o=5&pid=1.7" alt=""></a>
+          <a href="https://www.linkedin.com/in/gursimran-singh-7962131b3/" target="_blank"><img style="width: 40px;height: 40px;margin: 10px;" src="https://www.bing.com/th?id=OIP.Ff1a2zx1DnGg5rppyqq-XwHaHa&w=184&h=184&c=8&rs=1&qlt=90&pid=3.1&rm=2" alt=""></a>
+          <p style="font-size: 30px;color: rgb(28, 88, 253);" >@ Copyright Gursimran singh Turna.</br>This webpage or profile has been created by using my mind.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
